@@ -71,9 +71,18 @@ The case study clearly distinguishes the simulated current-state gap from the pl
 - **Evidence:** Records or system outputs used to demonstrate that a control is actually operating.
 - **Risk assessment vs. gap assessment:** A risk assessment asks what could happen and how serious it would be; a gap assessment asks what expected practice or control is missing or insufficient.
 
+## Portfolio Projects
+
+### Project 1 - ISO/IEC 27001:2022 GRC Readiness
+The original PeachtreePay project demonstrates risk assessment, control-gap analysis, treatment planning, evidence tracking, policies, and remediation prioritization.
+
+### Project 2 - Third-Party Vendor Risk Assessment
+[View the CloudBridge CRM vendor risk assessment](vendor-risk-assessment/README.md), which demonstrates vendor due diligence, questionnaire analysis, evidence review, risk scoring, remediation planning, and an executive conditional-approval recommendation.
+
 ## Files
 
 - [MFA risk traceability case study](case-studies/mfa-risk-traceability.md) - browser-friendly, end-to-end example of risk-to-control reasoning
+- [CloudBridge CRM vendor risk assessment](vendor-risk-assessment/README.md) - complete simulated third-party risk assessment
 - `PeachtreePay_ISO27001_GRC_Portfolio.pdf` - employer-facing portfolio document
 - `PeachtreePay_ISO27001_GRC_Portfolio.xlsx` - working risk register, treatment plan, gap assessment, SoA sample, and evidence tracker
 
