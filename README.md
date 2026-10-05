@@ -14,7 +14,7 @@ This portfolio demonstrates how an entry-level GRC analyst can translate busines
 ## Featured work
 
 - [MFA risk traceability case study](case-studies/mfa-risk-traceability.md) — follows a Critical risk from business impact and inherent scoring through treatment, ISO control alignment, ownership, evidence, testing, status, and estimated residual risk.
-- [CloudBridge CRM executive memo](vendor-risk-assessment/06-executive-memo.md) — communicates a risk-based conditional-approval recommendation to management.
+- [CloudBridge CRM executive risk memo](vendor-risk-assessment/05-executive-risk-memo.md) — communicates a risk-based conditional-approval recommendation to management.
 - [90-day ISO readiness roadmap](iso27001-readiness/07-remediation-roadmap.md) — sequences remediation by risk, dependency, and practical effort.
 
 ## Portfolio at a glance
