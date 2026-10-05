@@ -1,97 +1,59 @@
-# PeachtreePay ISO/IEC 27001:2022 GRC Readiness Portfolio Project
+# PeachtreePay GRC Portfolio
 
-> **Simulated portfolio project - not a real client engagement.** PeachtreePay is a fictional fintech organization created for educational and job-portfolio purposes.
+> **Simulated portfolio work — not a real client engagement.** PeachtreePay is a fictional 100-person fintech organization created for educational and job-portfolio purposes.
 
-## Project Overview
+This portfolio demonstrates how an entry-level GRC analyst can translate business context into risk decisions, control assessments, evidence expectations, remediation plans, and management communication.
 
-This project demonstrates a practical, beginner-friendly Governance, Risk, and Compliance (GRC) workflow using ISO/IEC 27001:2022 concepts. The fictional company, PeachtreePay, is a 100-person Atlanta fintech organization that uses Microsoft 365, AWS, employee laptops, customer databases, and third-party service providers.
+## Start here
 
-The project focuses on how a GRC analyst can identify business risks, evaluate control gaps, recommend treatments, document evidence, and communicate remediation priorities to management.
+| Project | What it demonstrates | Key deliverables |
+|---|---|---|
+| [Project 1: ISO/IEC 27001:2022 Readiness](iso27001-readiness/README.md) | ISMS scoping, risk assessment, control-gap analysis, treatment planning, evidence mapping, policies, and remediation prioritization | 15-risk register, 12-area gap assessment, selected-control SoA, treatment plan, evidence register, policy samples, and 90-day roadmap |
+| [Project 2: Third-Party Vendor Risk Assessment](vendor-risk-assessment/README.md) | Vendor due diligence, questionnaire review, evidence analysis, risk scoring, conditional approval, and remediation tracking | Assessment summary, questionnaire, evidence review, risk register, remediation plan, and executive memo |
 
-## What I Completed
+## Featured work
 
-- Defined the simulated ISMS scope
-- Created an asset inventory
-- Developed a 5 x 5 risk-scoring methodology
-- Built a 15-item information-security risk register
-- Evaluated inherent and residual risk
-- Created a risk treatment plan
-- Performed a readiness gap assessment
-- Built a selected-control Statement of Applicability sample
-- Drafted sample information-security, access-control, and incident-response policies
-- Created an evidence register
-- Developed a 90-day remediation roadmap
-- Prepared an executive summary and interview walkthrough
-- Documented an end-to-end risk traceability case study
+- [MFA risk traceability case study](case-studies/mfa-risk-traceability.md) — follows a Critical risk from business impact and inherent scoring through treatment, ISO control alignment, ownership, evidence, testing, status, and estimated residual risk.
+- [CloudBridge CRM executive memo](vendor-risk-assessment/06-executive-memo.md) — communicates a risk-based conditional-approval recommendation to management.
+- [90-day ISO readiness roadmap](iso27001-readiness/07-remediation-roadmap.md) — sequences remediation by risk, dependency, and practical effort.
 
-## Key Findings
+## Portfolio at a glance
 
-The highest-priority simulated risks involved:
+| Area | Demonstrated result |
+|---|---|
+| Risk management | 15 information-security risks scored using a 5 × 5 likelihood-and-impact method |
+| Readiness assessment | 12 control areas evaluated: 5 Not Implemented and 7 Partial |
+| Control mapping | 14 selected ISO/IEC 27001:2022 Annex A controls documented in an SoA sample |
+| Evidence thinking | 19 evidence types mapped to what each artifact would demonstrate |
+| Governance documentation | Information Security, Access Control, and Incident Response policy samples |
+| Remediation planning | Accountable owners, priorities, target dates, expected residual risk, and a 90-day roadmap |
+| Third-party risk | One end-to-end vendor assessment with findings, evidence gaps, remediation, and executive recommendation |
 
-1. Identity and access management
-2. Phishing and credential compromise
-3. Employee offboarding
-4. Vulnerability management
-5. AWS/cloud configuration
-6. Incident response
-7. Logging and monitoring
-8. Third-party risk
+## Skills demonstrated
 
-## Example Risk Workflow
+- Risk identification, scoring, treatment, and residual-risk reasoning
+- ISO/IEC 27001:2022 readiness and selected Annex A control mapping
+- Control design and gap assessment
+- Evidence identification and audit-oriented thinking
+- Third-party risk assessment and due diligence
+- Policy writing and remediation planning
+- Clear communication for technical and business audiences
 
-**Risk:** An employee account is compromised because MFA is not enabled everywhere.
+## Original Project 1 files
 
-**Inherent likelihood:** 4/5  
-**Inherent impact:** 5/5  
-**Inherent score:** 20 - Critical
+The Markdown pages are optimized for browsing on GitHub. These original files preserve the formatted portfolio and working workbook:
 
-**Treatment:** Mitigate
+- [PeachtreePay ISO 27001 GRC Portfolio PDF](PeachtreePay_ISO27001_GRC_Portfolio.pdf)
+- [PeachtreePay ISO 27001 GRC Portfolio workbook](PeachtreePay_ISO27001_GRC_Portfolio.xlsx)
 
-**Recommended controls:** Company-wide MFA, stronger authentication, security monitoring, and phishing awareness.
+## Interview summary
 
-**Residual risk:** Reduced primarily by lowering the likelihood of successful account takeover.
+> I built two connected GRC projects for a simulated fintech company. First, I completed an ISO 27001 readiness assessment by defining scope and assets, scoring 15 risks, assessing 12 control gaps, mapping selected Annex A controls, identifying evidence, and prioritizing a 90-day remediation plan. Second, I assessed a critical SaaS vendor, reviewed questionnaire responses and evidence gaps, scored vendor risks, and made a conditional-approval recommendation with tracked remediation. The portfolio shows how I connect risks, controls, evidence, ownership, and business decisions.
 
-## Featured End-to-End Case Study
+## ISO/IEC 27001 note
 
-[View the critical MFA risk traceability case study](case-studies/mfa-risk-traceability.md) to see how one risk connects to business impact, inherent scoring, treatment, ISO/IEC 27001:2022 control alignment, ownership, evidence, validation, remediation status, and estimated residual risk.
+This portfolio uses ISO/IEC 27001:2022 concepts for educational purposes. The Statement of Applicability is a selected-control sample and does not reproduce the full standard. In an actual ISMS, the organization determines necessary controls through risk treatment and compares them with Annex A to confirm that necessary controls have not been omitted.
 
-The case study clearly distinguishes the simulated current-state gap from the planned treatment and does not claim that an untested control has already been implemented.
+## Reference
 
-## How I Explain the Project in an Interview
-
-> I built a simulated ISO 27001 readiness assessment for a fictional fintech company. I defined the ISMS scope and key assets, created a risk methodology and risk register, scored inherent risk, recommended treatments, estimated residual risk, performed a gap assessment, and mapped selected controls in a Statement of Applicability. I also created sample policies, an evidence register, and a 90-day remediation roadmap.
-
-## Important Concepts I Practiced
-
-- **Inherent risk:** Risk before additional treatment controls are considered.
-- **Residual risk:** Risk remaining after controls or treatment actions are considered.
-- **Risk owner:** The person or business function accountable for making sure a risk is appropriately managed.
-- **Risk treatment:** Mitigate, accept, transfer, or avoid.
-- **Policy vs. procedure:** A policy states what is required; a procedure explains the detailed steps used to meet the requirement.
-- **Evidence:** Records or system outputs used to demonstrate that a control is actually operating.
-- **Risk assessment vs. gap assessment:** A risk assessment asks what could happen and how serious it would be; a gap assessment asks what expected practice or control is missing or insufficient.
-
-## Portfolio Projects
-
-### Project 1 - ISO/IEC 27001:2022 GRC Readiness
-The original PeachtreePay project demonstrates risk assessment, control-gap analysis, treatment planning, evidence tracking, policies, and remediation prioritization.
-
-### Project 2 - Third-Party Vendor Risk Assessment
-[View the CloudBridge CRM vendor risk assessment](vendor-risk-assessment/README.md), which demonstrates vendor due diligence, questionnaire analysis, evidence review, risk scoring, remediation planning, and an executive conditional-approval recommendation.
-
-## Files
-
-- [MFA risk traceability case study](case-studies/mfa-risk-traceability.md) - browser-friendly, end-to-end example of risk-to-control reasoning
-- [CloudBridge CRM vendor risk assessment](vendor-risk-assessment/README.md) - complete simulated third-party risk assessment
-- `PeachtreePay_ISO27001_GRC_Portfolio.pdf` - employer-facing portfolio document
-- `PeachtreePay_ISO27001_GRC_Portfolio.xlsx` - working risk register, treatment plan, gap assessment, SoA sample, and evidence tracker
-
-## ISO 27001 Note
-
-This project uses ISO/IEC 27001:2022 concepts for educational purposes. The selected Statement of Applicability controls are a portfolio sample and do not reproduce the full ISO standard. In an actual ISMS, the organization determines necessary controls through risk treatment and compares them with Annex A to confirm that necessary controls have not been omitted.
-
-## References
-
-- ISO/IEC 27001:2022 - https://www.iso.org/standard/27001
-- ISO/IEC JTC 1/SC 27 Auditing Practices Group - Statement of Applicability discussion
-- ISO/IEC JTC 1/SC 27 Journal materials on ISO/IEC 27001 and Annex A
+- [ISO/IEC 27001 — Information security management systems](https://www.iso.org/standard/27001)
