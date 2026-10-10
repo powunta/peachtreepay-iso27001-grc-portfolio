@@ -1,0 +1,13 @@
+id,asset,owner,ephi_interaction,priority
+A01,Cloud electronic health record,IT Lead,Stores and processes patient charts,Critical
+A02,Patient portal,Patient Services,Receives patient intake,High
+A03,Identity provider and SSO,IT Lead,Controls EHR authentication,Critical
+A04,Managed workforce laptops,IT Lead,Accesses EHR,High
+A05,Clinical tablets,Clinical Lead,Displays patient records,High
+A06,Billing and scheduling platform,Operations Lead,Processes patient and billing details,High
+A07,Secure messaging and email,Operations Lead,Transmits records where approved,High
+A08,Backup and disaster recovery systems,IT Lead,Protects EHR availability,Critical
+A09,HR onboarding/offboarding register,HR Lead,Triggers identity lifecycle,High
+A10,Network printers and scanners,Clinical Lead,Prints or scans patient records,Moderate
+A11,EHR user roster and access logs,Security Coordinator,Tracks access to records,Critical
+A12,Remote vendor support identities,IT Lead,Privileged access to EHR,High
