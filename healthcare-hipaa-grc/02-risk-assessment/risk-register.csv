@@ -1,0 +1,13 @@
+id,risk,assets,likelihood,impact,inherent_score,inherent_band,proposed_treatment,owner,residual_target,reference
+R01,Former-employee EHR access,A01;A03;A11,4,5,20,Critical,Automate HR-to-EHR termination and verify closure,IT Lead,10,CT-01
+R02,Weak privileged MFA,A01;A03,4,5,20,Critical,Strengthen MFA and review break-glass identities,IT Lead,8,GA-02
+R03,Ransomware interrupts patient care,A01;A04;A08,4,5,20,Critical,Endpoint hardening and verified backup recovery,IT Lead,12,GA-07
+R04,Overprivileged vendor support,A01;A12,4,4,16,High,Time-bound approval and access logging,IT Lead,6,VR-01
+R05,Patient portal credential stuffing,A02,4,4,16,High,Rate limits anomaly detection and risk-based MFA,Patient Services,6,GA-03
+R06,Lost unencrypted laptop,A04,3,5,15,High,Verify device encryption and remote lock,IT Lead,6,GA-04
+R07,Misdirected ePHI email attachment,A07,4,4,16,High,Approved messaging and security awareness,Operations Lead,6,GA-05
+R08,Insufficient audit-log review,A01;A03,4,4,16,High,Centralize alerts and demonstrate triage,Security Coordinator,6,GA-06
+R09,Unverified business associate agreement,A06,3,4,12,High,Confirm signed applicable BAA before ePHI sharing,Privacy Officer,4,VR-02
+R10,Unattended clinical tablet,A05,4,3,12,High,Automatic lock and shared-device policy,Clinical Lead,4,GA-08
+R11,Backup restore failure,A08,3,5,15,High,Perform and document recovery testing,IT Lead,6,GA-07
+R12,Printer retains ePHI,A10,3,3,9,Moderate,Secure print disposal and media safeguards,Clinical Lead,4,GA-09
