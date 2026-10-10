@@ -1,0 +1,13 @@
+id,days,priority,action,owner,evidence
+D01,0-30,Critical,Approve offboarding standard,HR Lead,Signed workflow
+D02,0-30,Critical,Reconcile EHR accounts against departures,IT Lead,All exceptions triaged
+D03,0-30,Critical,Observe documented backup restore test,IT Lead,Restore result and recovery objectives
+D04,0-30,Critical,Validate EHR vendor BAA and access,Privacy Officer,Executed agreement and evidence
+D05,31-60,High,Automate HR-to-IdP and EHR disablement,IT Lead,Timely disable logs
+D06,31-60,High,Harden privileged MFA and break-glass access,IT Lead,Reviewed privileged account inventory
+D07,31-60,High,Implement audit alert review,Security Coordinator,Reviewed alert tickets
+D08,31-60,High,Verify endpoint encryption and safe messaging,IT Lead,Exception tickets and compliance export
+D09,61-90,High,Independently retest offboarding,Security Coordinator,Documented exception disposition
+D10,61-90,High,Run ransomware tabletop and recovery review,Clinical Lead,Approved action log
+D11,61-90,Moderate,Test printer tablet and disposal protections,Clinical Lead,Walkthrough findings
+D12,61-90,High,Review risk register and residual scoring,Operations Director,Management sign-off
