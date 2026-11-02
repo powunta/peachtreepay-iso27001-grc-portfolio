@@ -20,7 +20,8 @@ This project demonstrates how a junior GRC analyst can define an ISMS scope, ide
 8. [MFA Control-Testing Workpaper](08-mfa-control-testing-workpaper.md)
 9. [MFA Cross-Framework Mapping](09-mfa-cross-framework-crosswalk.md)
 10. [Accessible Executive Summary](10-executive-summary.md)
-11. [Critical MFA Risk Traceability Case Study](../case-studies/mfa-risk-traceability.md)
+11. [MFA Corrective-Action Validation and Retest](11-mfa-corrective-action-retest.md)
+12. [Critical MFA Risk Traceability Case Study](../case-studies/mfa-risk-traceability.md)
 
 The original [Excel workbook](../PeachtreePay_ISO27001_GRC_Portfolio.xlsx), [employer-facing portfolio PDF](../PeachtreePay_ISO27001_GRC_Portfolio.pdf), and [one-page executive summary PDF](../PeachtreePay_GRC_Executive_Summary.pdf) remain available for downloading and review.
 
@@ -58,7 +59,7 @@ The MFA work demonstrates a complete assurance cycle:
 
 **Critical risk -> treatment -> ISO control -> expected evidence -> population testing -> exception -> remediation -> retest -> residual-risk decision**
 
-The simulated test identified two unsupported MFA exceptions, concluded that the control was not operating effectively across the full population, and withheld acceptance of the estimated residual-risk score pending remediation and retesting.
+The initial simulated test identified two unsupported MFA exceptions and withheld residual-risk acceptance. A subsequent corrective-action review and complete-population retest confirmed MFA enforcement for 108 of 108 accounts, closed the finding, and supported the residual-risk score of 10 (Medium) with continued quarterly monitoring.
 
 ## Skills Demonstrated
 
@@ -70,10 +71,11 @@ The simulated test identified two unsupported MFA exceptions, concluded that the
 - Selected-control SoA reasoning
 - Evidence planning, population reconciliation, and sampling
 - Control testing and exception analysis
+- Root-cause analysis, corrective-action validation, retesting, and finding closure
 - ISO-NIST-SOC 2 cross-framework mapping
 - Policy development
 - Business-oriented security communication
 
 ## Interview Walkthrough
 
-> I built a simulated ISO 27001 readiness assessment for a fictional fintech company. I defined the ISMS scope and key assets, created a risk methodology and 15-item risk register, assessed inherent risk, recommended treatments, performed a 12-area gap assessment, and mapped selected Annex A controls. I then created an MFA testing workpaper using a simulated 108-account population. I reconciled the population to system reports, evaluated exceptions, concluded the control was not fully effective, and withheld residual-risk acceptance until remediation and retesting. I also mapped the MFA objective to NIST CSF 2.0 PR.AA-03 and the SOC 2 CC6.1 logical-access theme.
+> I built a simulated ISO 27001 readiness assessment for a fictional fintech company. I defined the ISMS scope and key assets, created a risk methodology and 15-item risk register, assessed inherent risk, recommended treatments, performed a 12-area gap assessment, and mapped selected Annex A controls. I then created an MFA testing workpaper using a simulated 108-account population. I reconciled the population to system reports, identified two unsupported exceptions, and withheld residual-risk acceptance. I then documented root causes and corrective actions, retested all 108 accounts at 100% enforcement, closed the finding, and supported a Medium residual-risk decision with continued monitoring. I also mapped the MFA objective to NIST CSF 2.0 PR.AA-03 and the SOC 2 CC6.1 logical-access theme.
