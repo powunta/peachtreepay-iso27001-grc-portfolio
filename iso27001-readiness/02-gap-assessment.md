@@ -23,4 +23,8 @@ This simulated assessment compares PeachtreePay's current practices with expecte
 - **Partial:** 7 areas
 - **Implemented:** 0 areas within this gap-review sample
 
-These statuses describe the fictional organization's assessed current state. They do not mean the portfolio deliverables are unfinished.
+These statuses describe the fictional organization's assessed baseline state. They do not mean the portfolio deliverables are unfinished.
+
+## Follow-Up Validation
+
+The baseline table is preserved as a point-in-time readiness snapshot. A later simulated [MFA corrective-action and retest](11-mfa-corrective-action-retest.md) confirmed enforcement for 108 of 108 in-scope accounts, closed the original finding, and supported a Medium residual-risk decision. This follow-up does not retroactively change the baseline counts above; it demonstrates how remediation progress would be tracked separately.
