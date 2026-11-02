@@ -1,93 +1,78 @@
 # Critical MFA Risk: End-to-End Traceability Case Study
 
 > **Simulated portfolio case study — not a real client engagement or certification audit.**  
-> This page demonstrates how one PeachtreePay risk flows through assessment, treatment, control selection, evidence planning, validation, and residual-risk review.
+> This page demonstrates how one PeachtreePay risk flows from assessment through corrective action, retesting, finding closure, and residual-risk review.
 
 ## Executive Summary
 
-PeachtreePay's highest-rated simulated risk is employee account compromise caused by inconsistent multi-factor authentication (MFA). At the time of the readiness assessment, MFA was enabled for administrators only, leaving regular user accounts without consistent protection.
+PeachtreePay's highest-rated simulated risk is employee account compromise caused by inconsistent multi-factor authentication (MFA). The baseline readiness assessment found MFA enabled for administrators but not consistently enforced for regular users.
 
-Because credential attacks are common and a compromised account could expose sensitive information or enable further access, the risk received an inherent likelihood of 4/5 and impact of 5/5, producing a Critical inherent score of 20. The selected treatment is to mitigate the risk by requiring MFA on critical systems within 30 days.
+The risk received an inherent likelihood of 4/5 and impact of 5/5, producing a Critical score of 20. PeachtreePay selected mitigation through company-wide MFA. Initial testing over 108 human accounts found two unsupported exceptions and one approved temporary exception, so the control failed its 100% criterion and the proposed residual-risk score was withheld.
+
+After simulated corrective action, a complete-population retest confirmed MFA enforcement for 108 of 108 accounts, no active exceptions, and preventive workflow improvements. The finding was closed, and the evidence supported a residual score of 10 (Medium) with continued quarterly monitoring.
 
 ## End-to-End Traceability
 
 | Traceability field | PeachtreePay decision |
 |---|---|
 | Risk statement | Employee account compromised because MFA is not enabled everywhere |
-| Business context | PeachtreePay relies on Microsoft 365, AWS, employee endpoints, customer data, and cloud-based services |
+| Business context | PeachtreePay relies on Microsoft 365, AWS, employee endpoints, customer data, and cloud services |
 | Threat scenario | Credential theft, phishing, password reuse, or brute-force activity leads to account takeover |
-| Control weakness | MFA is enabled for administrators only; regular users are not consistently protected |
-| Potential business impact | Unauthorized access, sensitive-information exposure, service disruption, fraud, or further access into connected systems |
-| Inherent likelihood | 4/5 |
-| Inherent impact | 5/5 |
-| Inherent risk score | 20 — Critical |
-| Treatment decision | Mitigate |
-| Risk owner | IT/Security |
-| Primary treatment action | Require MFA on critical systems and expand MFA company-wide |
-| Target timeframe | First 30 days of the remediation roadmap |
-| Primary ISO/IEC 27001:2022 control alignment | Annex A 8.5 — Secure authentication |
-| Supporting control themes | Access control, identity management, authentication information, security monitoring, and phishing awareness |
-| Primary expected evidence | Microsoft 365/AWS MFA configuration report demonstrating that MFA is enabled for required accounts |
-| Validation status | Not yet tested — treatment is planned and the gap remains Not Implemented in the simulated assessment |
-| Estimated residual risk | 10, conditional on successful implementation and validation |
-| Current remediation status | Planned / Not Implemented |
+| Baseline control weakness | MFA was enabled for administrators only; regular users were not consistently protected |
+| Potential business impact | Unauthorized access, information exposure, service disruption, fraud, or lateral movement |
+| Inherent likelihood and impact | 4 × 5 |
+| Inherent score | 20 — Critical |
+| Treatment decision and owner | Mitigate — IT/Security |
+| ISO/IEC 27001:2022 alignment | Annex A 8.5 — Secure authentication |
+| Primary evidence | Account population, Microsoft 365 and AWS reports, exception register, change tickets, provisioning checklist |
+| Initial test result | Exception — 105 of 108 enforced, one approved exception, and two unsupported exceptions |
+| Corrective action | Enforce MFA, remove a legacy exclusion, require ticketed AWS account creation, and close the temporary exception |
+| Retest result | Pass — 108 of 108 enforced, no active exceptions |
+| Finding status | Closed — Remediated and Retested |
+| Residual-risk decision | 2 × 5 = 10 — Medium; accept with continued monitoring |
+| Ongoing assurance | Quarterly population reconciliation, exception review, and provisioning-workflow testing |
 
-## Risk-to-Control Decision Trail
+## Assurance Timeline
 
-1. **Identify the risk:** Inconsistent MFA creates an account-compromise scenario.
-2. **Assess inherent risk:** Likelihood 4 × impact 5 = 20, making it the portfolio's only Critical inherent risk.
-3. **Select treatment:** Mitigate because the risk can be reduced through stronger authentication and supporting controls.
-4. **Assign accountability:** IT/Security owns remediation and follow-through.
-5. **Set priority:** Place MFA on critical systems in the first 30 days because it addresses the highest-rated risk.
-6. **Define evidence:** Obtain configuration reports showing which Microsoft 365 and AWS accounts are protected.
-7. **Validate operation:** Compare the in-scope account population with enforced-MFA results, investigate exceptions, and retain dated test documentation.
-8. **Reassess risk:** Confirm whether the evidence supports the estimated residual score of 10; revise the score if testing shows gaps.
+1. **Identify and score the risk:** Inconsistent MFA produces a Critical inherent score of 20.
+2. **Select treatment:** Require MFA across Microsoft 365 and AWS human accounts.
+3. **Define evidence:** Establish the population and obtain authoritative enforcement and exception reports.
+4. **Perform initial testing:** Test all 108 accounts and identify two unsupported exceptions.
+5. **Withhold residual-risk acceptance:** Keep the risk open because the evidence does not meet the control criterion.
+6. **Analyze root causes:** Identify a legacy policy exclusion and an AWS account created outside the approved workflow.
+7. **Validate corrective action:** Inspect tickets, refreshed reports, the exception register, and the revised provisioning checklist.
+8. **Retest the complete population:** Confirm 108 of 108 accounts have MFA enforced and no active exceptions remain.
+9. **Close the finding:** Mark it Closed — Remediated and Retested.
+10. **Reassess residual risk:** Support the planned score of 10 and require quarterly monitoring.
 
-## Control Implementation and Evidence Plan
+## Evidence and Decision Trail
 
-| Activity | Expected output | Validation approach | Status |
-|---|---|---|---|
-| Identify in-scope Microsoft 365 and AWS accounts | Current account population | Reconcile user and privileged-account lists with system inventories | Planned |
-| Enforce MFA for required accounts | MFA configuration settings | Review tenant and cloud-console configuration | Planned |
-| Document approved exceptions | Exception log with owner and expiration date | Confirm each exception has business justification and approval | Planned |
-| Generate implementation evidence | Microsoft 365/AWS MFA configuration report | Verify the report is dated, attributable, and covers the required population | Planned |
-| Test control operation | MFA coverage test results | Sample administrator and regular-user accounts and confirm enforcement | Not tested |
-| Review residual risk | Approved residual-risk record | Risk owner reviews test results and accepts or requests further treatment | Pending |
-
-## Evidence Quality Criteria
-
-Evidence should be:
-
-- **Relevant:** It directly demonstrates MFA coverage for the systems and accounts in scope.
-- **Complete:** It includes regular users, administrators, service accounts, and documented exceptions where applicable.
-- **Current:** It is dated and represents the configuration during the review period.
-- **Reliable:** It comes from authoritative Microsoft 365 or AWS administrative reporting.
-- **Traceable:** It can be linked to the risk, treatment action, control, owner, and validation result.
-
-A configuration report alone shows how the control is configured at a point in time. A stronger evidence package would also include the in-scope account population, approved exceptions, an implementation/change record, and documented validation results.
+| Phase | Evidence or activity | Result |
+|---|---|---|
+| Baseline | Gap assessment and risk register | MFA weakness identified; inherent risk 20 |
+| Treatment | Risk treatment plan and 30-day roadmap | Company-wide MFA prioritized |
+| Initial validation | 108-account population, system reports, and exception register | Control failed; two unsupported exceptions |
+| Root-cause review | Policy-exclusion and AWS provisioning analysis | Workflow weaknesses identified |
+| Corrective action | Remediation tickets and revised provisioning checklist | Exceptions corrected and preventive steps added |
+| Retest | Refreshed complete population and 15-account reperformance | 108/108 enforced; no active exceptions |
+| Management decision | Retest conclusion and risk-owner review | Finding closed; residual risk 10 accepted with monitoring |
 
 ## Residual-Risk Interpretation
 
-The residual score of 10 is an **estimate**, not a proven outcome. It assumes MFA is successfully enforced for required accounts and that testing confirms the control is operating as intended. If regular-user coverage is incomplete, exceptions are unmanaged, or evidence cannot be produced, the risk should remain open and the residual score should be reconsidered.
+The residual score of 10 is supported only within this simulated, point-in-time exercise. MFA reduces the likelihood of account compromise from 4 to 2, but impact remains 5 because a successful compromise could still cause severe harm. Continued monitoring is necessary because new accounts, policy exclusions, authentication-method changes, and temporary exceptions can reintroduce exposure.
 
 ## Management Recommendation
 
-Prioritize company-wide MFA because it reduces the likelihood of the portfolio's highest-rated account-compromise risk. IT/Security should report completion, exceptions, evidence quality, test results, and remaining exposure to management before residual risk is formally accepted.
+Maintain quarterly population reconciliation and exception review. Require ticketed approval for new AWS human users, monitor policy exclusions, and reopen the finding if an unsupported exception appears.
 
 ## How I Would Explain This in an Interview
 
-> I started with the business risk rather than selecting a control first. PeachtreePay had MFA for administrators but not consistently for regular users, creating a critical account-compromise risk scored at 20. I selected mitigation, assigned IT/Security as the owner, placed company-wide MFA in the first 30 days, and defined Microsoft 365 and AWS configuration reports as primary evidence. I would validate that evidence against the full in-scope account population before confirming the estimated residual score of 10.
+> I started with the business risk rather than selecting a control first. Initial testing of all 108 Microsoft 365 and AWS human accounts found two unsupported MFA exceptions, so I did not accept the proposed residual-risk score. I documented the root causes, reviewed corrective-action evidence, retested the complete population, and confirmed 108 of 108 accounts had MFA enforced with no active exceptions. That supported closing the finding and accepting a Medium residual risk with quarterly monitoring.
 
-## Interview Questions This Case Study Supports
+## Related Artifacts
 
-**Why did you prioritize MFA?**  
-It addressed the only Critical inherent risk, reduced the likelihood of account takeover, and could be implemented early in the remediation roadmap.
-
-**Why is the residual score only an estimate?**  
-Residual risk should be confirmed after treatment is implemented and evidence shows the control operates effectively. The project does not claim that simulated remediation has already occurred.
-
-**How would you test the control?**  
-I would reconcile the in-scope account list against Microsoft 365 and AWS MFA reports, sample administrator and regular-user accounts, review exceptions, and document the test date, reviewer, results, and follow-up actions.
-
-**What would happen if testing failed?**  
-I would keep the risk open, document the deficiency, assign corrective action, update the target date, and reassess the residual-risk estimate after remediation.
+- [Initial MFA control-testing workpaper](../iso27001-readiness/08-mfa-control-testing-workpaper.md)
+- [MFA corrective-action validation and retest](../iso27001-readiness/11-mfa-corrective-action-retest.md)
+- [Risk treatment plan](../iso27001-readiness/03-risk-treatment-plan.md)
+- [Evidence register](../iso27001-readiness/05-evidence-register.md)
+- [MFA cross-framework mapping](../iso27001-readiness/09-mfa-cross-framework-crosswalk.md)
