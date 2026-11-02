@@ -9,7 +9,7 @@ PeachtreePay's highest-rated simulated risk is employee account compromise cause
 
 The risk received an inherent likelihood of 4/5 and impact of 5/5, producing a Critical score of 20. PeachtreePay selected mitigation through company-wide MFA. Initial testing over 108 human accounts found two unsupported exceptions and one approved temporary exception, so the control failed its 100% criterion and the proposed residual-risk score was withheld.
 
-After simulated corrective action, a complete-population retest confirmed MFA enforcement for 108 of 108 accounts, no active exceptions, and preventive workflow improvements. The finding was closed, and the evidence supported a residual score of 10 (Medium) with continued quarterly monitoring.
+After simulated corrective action, a complete-population retest confirmed MFA enforcement for 108 of 108 accounts, reduced the exception population from 3 to 0, and verified preventive workflow improvements. The finding was closed, and the evidence supported a residual score of 10 (Medium) with continued quarterly monitoring.
 
 ## End-to-End Traceability
 
@@ -28,6 +28,7 @@ After simulated corrective action, a complete-population retest confirmed MFA en
 | Initial test result | Exception — 105 of 108 enforced, one approved exception, and two unsupported exceptions |
 | Corrective action | Enforce MFA, remove a legacy exclusion, require ticketed AWS account creation, and close the temporary exception |
 | Retest result | Pass — 108 of 108 enforced, no active exceptions |
+| Exception rollforward | 3 initial exceptions (2 unsupported + 1 approved temporary) → 0 active exceptions at retest |
 | Finding status | Closed — Remediated and Retested |
 | Residual-risk decision | 2 × 5 = 10 — Medium; accept with continued monitoring |
 | Ongoing assurance | Quarterly population reconciliation, exception review, and provisioning-workflow testing |
