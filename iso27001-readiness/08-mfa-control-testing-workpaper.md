@@ -76,6 +76,10 @@ The control is appropriately designed around company-wide MFA, and privileged Mi
 5. Retest the complete population and document closure evidence.
 6. Reassess residual risk and obtain risk-owner approval.
 
+## Follow-Up Status
+
+The subsequent simulated [MFA corrective-action validation and retest](11-mfa-corrective-action-retest.md) confirmed remediation of the two unsupported exceptions, closure of the temporary exception, and MFA enforcement for 108 of 108 accounts. The finding was closed and the residual-risk score of 10 (Medium) was supported with continued quarterly monitoring.
+
 ## Auditor-Oriented Takeaway
 
 This workpaper distinguishes four separate conclusions:
@@ -87,6 +91,7 @@ This workpaper distinguishes four separate conclusions:
 
 ## Related Artifacts
 
+- [MFA corrective-action validation and retest](11-mfa-corrective-action-retest.md)
 - [MFA risk traceability case study](../case-studies/mfa-risk-traceability.md)
 - [MFA cross-framework mapping](09-mfa-cross-framework-crosswalk.md)
 - [Evidence register](05-evidence-register.md)
