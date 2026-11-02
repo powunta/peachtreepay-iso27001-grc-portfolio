@@ -2,11 +2,11 @@
 
 This plan converts the 15 assessed risks into accountable remediation work. It preserves the priorities, owners, target dates, residual-risk estimates, and status recorded in the source workbook.
 
-> **Portfolio note:** PeachtreePay is a fictional fintech organization. The actions and residual scores below are simulated planning assumptions, not evidence that controls have been implemented.
+> **Portfolio note:** PeachtreePay is a fictional fintech organization. Most actions and residual scores below remain simulated planning assumptions. Risk 1 includes a later simulated corrective-action validation and retest; this does not represent a real implementation.
 
 | ID | Risk | Treatment | Recommended action | Owner | Priority | Target | Residual score | Status |
 |---:|---|---|---|---|---|---:|---:|---|
-| 1 | Employee account compromised because MFA is not enabled everywhere | Mitigate | Require MFA for all users and critical systems | IT/Security | Critical | 30 days | 10 | Planned |
+| 1 | Employee account compromised because MFA is not enabled everywhere | Mitigate | Require MFA for all users and critical systems | IT/Security | Critical | 30 days | 10 | Closed — Remediated and Retested |
 | 2 | Phishing attack steals employee credentials | Mitigate | Phishing training, MFA, and email filtering | Security | High | 60 days | 8 | Planned |
 | 3 | Former employee retains access after termination | Mitigate | Formal HR-to-IT offboarding workflow | HR + IT | High | 30 days | 5 | Planned |
 | 4 | AWS misconfiguration exposes customer information | Mitigate | Cloud configuration reviews and security baseline | Cloud/Security | High | 60 days | 5 | Planned |
@@ -26,10 +26,11 @@ This plan converts the 15 assessed risks into accountable remediation work. It p
 
 The first 30 days focus on MFA, offboarding, and vulnerability-remediation timelines because these actions address one Critical risk and several High risks while establishing repeatable control processes.
 
-A lower residual score is an expected post-treatment result. Closure should require evidence review and control testing before the organization accepts that estimate.
+A lower residual score is an expected post-treatment result. Closure should require evidence review and control testing before the organization accepts that estimate. For Risk 1, the [simulated MFA corrective-action and retest](11-mfa-corrective-action-retest.md) supports the score of 10 and documents acceptance with continued monitoring.
 
 ## Related artifacts
 
 - [Risk register](01-risk-register.md)
 - [Evidence register](05-evidence-register.md)
 - [90-day remediation roadmap](07-remediation-roadmap.md)
+- [MFA corrective-action validation and retest](11-mfa-corrective-action-retest.md)
