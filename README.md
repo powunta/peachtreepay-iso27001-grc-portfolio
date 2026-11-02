@@ -8,7 +8,7 @@ This portfolio demonstrates how an entry-level GRC analyst translates business c
 
 | Project | Business scenario | What it demonstrates | Best starting artifact |
 |---|---|---|---|
-| [Project 1: ISO/IEC 27001:2022 Readiness](iso27001-readiness/README.md) | 100-person fintech organization | ISMS scoping, risk assessment, control-gap analysis, treatment planning, selected Annex A mapping, evidence design, testing, policies, and remediation prioritization | [MFA control-testing workpaper](iso27001-readiness/08-mfa-control-testing-workpaper.md) |
+| [Project 1: ISO/IEC 27001:2022 Readiness](iso27001-readiness/README.md) | 100-person fintech organization | ISMS scoping, risk assessment, control-gap analysis, treatment planning, selected Annex A mapping, evidence design, testing, corrective-action validation, and remediation prioritization | [MFA assurance lifecycle](case-studies/mfa-risk-traceability.md) |
 | [Project 2: Third-Party Vendor Risk Assessment](vendor-risk-assessment/README.md) | Critical SaaS provider supporting the fintech environment | Vendor due diligence, questionnaire and evidence review, risk scoring, conditional approval, and remediation tracking | [Executive risk memo](vendor-risk-assessment/05-executive-risk-memo.md) |
 | [Project 3: HIPAA Security Risk Assessment](healthcare-hipaa-grc/README.md) | 75-person outpatient clinic using a cloud EHR | ePHI scoping, HIPAA safeguard assessment, risk analysis, access-control testing, healthcare vendor risk, and executive reporting | [EHR offboarding control test](healthcare-hipaa-grc/04-control-testing/termination-access-test.md) |
 
@@ -18,8 +18,9 @@ This portfolio demonstrates how an entry-level GRC analyst translates business c
 
 - [One-page PeachtreePay executive summary](PeachtreePay_GRC_Executive_Summary.pdf) — management-facing overview of the fintech assessment, findings, and priorities.
 - [MFA control-testing workpaper](iso27001-readiness/08-mfa-control-testing-workpaper.md) — tests a simulated 108-account population, documents evidence, identifies exceptions, and reaches an operating-effectiveness conclusion.
+- [MFA corrective-action and retest workpaper](iso27001-readiness/11-mfa-corrective-action-retest.md) — validates remediation, retests all 108 accounts, closes the finding, and supports the residual-risk decision.
 - [MFA cross-framework mapping](iso27001-readiness/09-mfa-cross-framework-crosswalk.md) — maps the authentication objective across ISO/IEC 27001:2022, NIST CSF 2.0, and SOC 2.
-- [MFA risk traceability case study](case-studies/mfa-risk-traceability.md) — follows a Critical risk from business impact and inherent scoring through treatment, control ownership, evidence, testing, status, and estimated residual risk.
+- [MFA risk traceability case study](case-studies/mfa-risk-traceability.md) — follows a Critical risk through treatment, initial failure, corrective action, full-population retesting, closure, and a supported residual-risk decision.
 
 ### Third-party risk
 
@@ -41,8 +42,8 @@ This portfolio demonstrates how an entry-level GRC analyst translates business c
 |---|---|
 | Risk management | 27 simulated risks across fintech and healthcare, scored with documented likelihood-and-impact methods |
 | ISO 27001 readiness | 15-risk register, 12-area gap assessment, selected-control SoA, evidence register, policy samples, and 90-day roadmap |
-| Control testing | MFA testing over 108 simulated accounts and EHR offboarding testing over 24 synthetic termination records |
-| Evidence and audit thinking | Evidence expectations, population definition, procedures, exceptions, conclusions, remediation, limitations, and retest plans |
+| Control testing | Initial MFA testing and corrective-action retesting over 108 simulated accounts, plus EHR offboarding testing over 24 synthetic termination records |
+| Evidence and audit thinking | Evidence expectations, population definition, exceptions, root-cause analysis, corrective-action validation, retesting, closure decisions, and limitations |
 | Cross-framework analysis | Focused MFA mapping across ISO/IEC 27001:2022, NIST CSF 2.0, and SOC 2 |
 | Third-party risk | End-to-end SaaS vendor assessment with evidence gaps, risk decisions, remediation, and executive recommendation |
 | Healthcare security | ePHI data-flow scoping, sampled HIPAA safeguard assessment, EHR access review, vendor risk, and management reporting |
@@ -72,14 +73,14 @@ The Markdown pages are optimized for quick browser review. These files provide f
 
 ## Interview summary
 
-> I built three simulated GRC case studies spanning ISO 27001 readiness, third-party risk, and HIPAA security risk. For a fictional fintech organization, I defined scope and assets, scored 15 risks, assessed 12 control areas, mapped selected Annex A controls, documented evidence needs, and prioritized a 90-day remediation plan. I then tested a simulated MFA population, evaluated exceptions, withheld residual-risk acceptance pending remediation, and mapped the objective to NIST CSF 2.0 and SOC 2. I also assessed a critical SaaS vendor and made a conditional-approval recommendation. To demonstrate healthcare GRC skills, I scoped ePHI exposure, assessed selected HIPAA safeguards, analyzed 12 risks, and tested 24 synthetic EHR termination records. Across the projects, I connect risks, controls, evidence, testing, ownership, remediation, and business decisions while clearly documenting the limits of simulated work.
+> I built three simulated GRC case studies spanning ISO 27001 readiness, third-party risk, and HIPAA security risk. For a fictional fintech organization, I defined scope and assets, scored 15 risks, assessed 12 control areas, mapped selected Annex A controls, documented evidence needs, and prioritized a 90-day remediation plan. I then tested a simulated MFA population, identified two unsupported exceptions, validated corrective actions, retested the complete 108-account population at 100% coverage, closed the finding, supported a Medium residual-risk decision, and mapped the objective to NIST CSF 2.0 and SOC 2. I also assessed a critical SaaS vendor and made a conditional-approval recommendation. To demonstrate healthcare GRC skills, I scoped ePHI exposure, assessed selected HIPAA safeguards, analyzed 12 risks, and tested 24 synthetic EHR termination records. Across the projects, I connect risks, controls, evidence, testing, ownership, remediation, and business decisions while clearly documenting the limits of simulated work.
 
 ## Important limitations
 
 - These projects are educational simulations, not paid employment, consulting engagements, compliance certifications, or audit opinions.
 - The ISO 27001 Statement of Applicability is a selected-control sample and does not reproduce the full standard.
 - The HIPAA work is a sampled safeguard assessment, not a comprehensive compliance audit.
-- Proposed residual-risk scores require implementation evidence, retesting, and management validation.
+- Most residual-risk scores remain proposed and require implementation evidence, retesting, and management validation; the MFA risk includes a simulated retest-supported decision.
 - A control exception is not automatically proof of unauthorized access, a breach, or a legal violation.
 
 ## References
