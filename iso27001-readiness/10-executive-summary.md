@@ -19,7 +19,7 @@ This portfolio demonstrates how an entry-level GRC analyst can translate busines
 - Documented a selected-control Statement of Applicability
 - Mapped 19 evidence types
 - Drafted policy samples and a 90-day remediation roadmap
-- Demonstrated MFA traceability, cross-framework mapping, and control testing
+- Demonstrated MFA traceability, cross-framework mapping, initial control testing, corrective-action validation, full-population retesting, and finding closure
 
 ### Project 2 - Third-Party Vendor Risk
 
@@ -35,12 +35,13 @@ This portfolio demonstrates how an entry-level GRC analyst can translate busines
 | Inherent-risk profile | 1 Critical, 13 High, and 1 Medium risk |
 | Readiness status | 5 control areas Not Implemented and 7 Partial |
 | Priority exposure | Inconsistent MFA creates the only Critical risk, scored 20 |
-| Control assurance | Planned controls require evidence review and operating-effectiveness testing before residual risk is accepted |
+| Control assurance | Initial MFA testing failed because of two unsupported exceptions; corrective action and a 108-account retest later passed |
+| Follow-up decision | MFA finding closed; residual risk 10 (Medium) supported with quarterly monitoring |
 | Vendor decision | Conditional approval with tracked remediation and evidence requirements |
 
 ## Management Recommendation
 
-Prioritize company-wide MFA, formal HR-to-IT offboarding, and vulnerability-remediation timelines in the first 30 days. Require accountable owners, dated evidence, documented testing, and residual-risk review before closing remediation items.
+Maintain quarterly MFA population and exception reviews following the simulated successful retest. Continue prioritizing formal HR-to-IT offboarding and vulnerability-remediation timelines, and require accountable owners, dated evidence, documented testing, and residual-risk review before closing the remaining remediation items.
 
 ## Business Value Demonstrated
 
