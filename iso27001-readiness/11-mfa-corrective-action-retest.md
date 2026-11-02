@@ -16,6 +16,7 @@
 | Tester | GRC Analyst |
 | Retest scope | Complete population of 108 in-scope Microsoft 365 and AWS human accounts |
 | Retest criterion | 100% MFA enforcement or a documented, approved, time-bound exception with compensating controls |
+| Exception-resolution standard | Critical unsupported exceptions target correction within 7 calendar days; no unsupported exception may remain open beyond 14 calendar days without documented risk-owner escalation and approval |
 | Framework alignment | ISO/IEC 27001:2022 Annex A 8.5; NIST CSF 2.0 PR.AA-03; SOC 2 CC6.1 alignment theme |
 
 ## Original Findings and Root-Cause Analysis
@@ -28,14 +29,16 @@
 
 ## Simulated Corrective-Action Evidence
 
-| Evidence ID | Simulated artifact | Validation performed | Result |
-|---|---|---|---|
-| E-MFA-R01 | Corrective-action tickets for MFA-EX-01 and MFA-EX-02 | Confirmed owner, action, date, and closure evidence | Sufficient |
-| E-MFA-R02 | Updated Microsoft 365 MFA enforcement report | Confirmed all 100 Microsoft 365 human accounts were enforced | Sufficient |
-| E-MFA-R03 | Updated AWS IAM credential report | Confirmed all 8 AWS human users were enforced | Sufficient |
-| E-MFA-R04 | Updated MFA exception register | Confirmed the temporary exception was closed and no active exceptions remained | Sufficient |
-| E-MFA-R05 | Revised account-provisioning checklist | Confirmed policy-exclusion review and AWS ticket approval were added | Sufficient |
-| E-MFA-R06 | IT/Security owner attestation | Confirmed corrective actions were reviewed and approved for retest | Sufficient |
+| Evidence ID | Simulated artifact | Simulated record reference and date | Validation performed | Result |
+|---|---|---|---|---|
+| E-MFA-R01 | Corrective-action tickets for MFA-EX-01 and MFA-EX-02 | SIM-SEC-1042 and SIM-SEC-1043; closed October 12, 2026 | Confirmed owner, action, date, and closure evidence | Sufficient |
+| E-MFA-R02 | Updated Microsoft 365 MFA enforcement report | SIM-RPT-M365-20261021; generated October 21, 2026 | Confirmed all 100 Microsoft 365 human accounts were enforced | Sufficient |
+| E-MFA-R03 | Updated AWS IAM credential report | SIM-RPT-AWS-20261021; generated October 21, 2026 | Confirmed all 8 AWS human users were enforced | Sufficient |
+| E-MFA-R04 | Updated MFA exception register | SIM-EXC-2026-017; closed October 14, 2026 | Confirmed the temporary exception was closed and no active exceptions remained | Sufficient |
+| E-MFA-R05 | Revised account-provisioning checklist | SIM-PROC-IAM-004 v2.1; approved October 14, 2026 | Confirmed policy-exclusion review and AWS ticket approval were added | Sufficient |
+| E-MFA-R06 | IT/Security owner attestation | SIM-ATT-MFA-20261019; approved October 19, 2026 | Confirmed corrective actions were reviewed and approved for retest | Sufficient |
+
+The identifiers above are deliberately prefixed **SIM** because they are fictional workpaper references, not records from Jira, ServiceNow, or a production ticketing system.
 
 ## Retest Procedures and Results
 
@@ -59,6 +62,16 @@
 | **Total** | **108** | **108** | **0** | **0** | **Pass** |
 
 **Observed enforcement coverage:** 108 of 108 accounts, or **100%**, at the simulated retest date.
+
+## Exception Rollforward
+
+| Exception category | Initial test | Corrected or closed | Remaining at retest |
+|---|---:|---:|---:|
+| Unsupported exceptions | 2 | 2 | 0 |
+| Approved temporary exceptions | 1 | 1 | 0 |
+| **Total exceptions** | **3** | **3** | **0** |
+
+The before-and-after result is explicit: **3 total initial exceptions → 0 active exceptions at retest**.
 
 ## Closure and Residual-Risk Decision
 
