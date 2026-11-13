@@ -21,6 +21,7 @@ This portfolio demonstrates how an entry-level GRC analyst translates business c
 - [MFA corrective-action and retest workpaper](iso27001-readiness/11-mfa-corrective-action-retest.md) — validates remediation, retests all 108 accounts, closes the finding, and supports the residual-risk decision.
 - [MFA cross-framework mapping](iso27001-readiness/09-mfa-cross-framework-crosswalk.md) — maps the authentication objective across ISO/IEC 27001:2022, NIST CSF 2.0, and SOC 2.
 - [MFA risk traceability case study](case-studies/mfa-risk-traceability.md) — follows a Critical risk through treatment, initial failure, corrective action, full-population retesting, closure, and a supported residual-risk decision.
+- [Harbor Analytics simulated customer security questionnaire](portfolio-exercises/customer-security-questionnaire/README.md) — drafts 18 responses, maps 28 hypothetical evidence references, routes SME review and escalation, and documents that no response is approved for external use.
 
 ### Third-party risk
 
